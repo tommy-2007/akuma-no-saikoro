@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akuma no Saikoro | News</title>
+  <link rel="shortcut icon" href="img/logo2.svg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+  
+</style>
+
+<body>
+
+  <div class="load" id="load" onclick="loadAudio()">
+    <img src="./img/logo2.svg" alt="">
+    <audio id="myAudio" src="./sound/ans-op.mp3"></audio>
+    <h1>Tap anything</h1>
+  </div>
+
+  <div class="topPage">
+    <!-- bar-->
+    <div class="bar">
+      <div class="bar-content">
+        <div class="brand">
+          <img src="img/logo2.svg" alt="" onclick="window.location = 'index.html'">
+          
+        </div>
+        <div class="pages">
+          <h1>Akuma no saikoro</h1>
+          <span class="page actif">Home</span>
+          <span class="page" onclick="window.location = '../news.html'">News</span>
+          <span class="page" onclick="window.location = './story.html'">Story</span>
+          <span class="page" onclick="window.location = './manga.html'">Manga</span>
+          <!-- <span class="page">Characters</span>
+          <span class="page">Mangaka</span> -->
+        </div>
+      </div>
+    </div>
+    <!-- area -->
+    <div class="cover">
+      <img src="./img/cover/cover.png" alt="">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/rvtGiWMEN9U?si=vZHKg3RFwP6VkgcD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- team -->
+  <footer class="tm">
+    <div class="team">
+      <div class="contact">
+        <i class="fa-brands fa-instagram fa-2xl"></i>
+        <i class="fa-brands fa-facebook fa-2xl"></i> 
+        <i class="fa-solid fa-envelope fa-2xl"></i>
+      </div>
+      &copy; 2024 Toumi Abderrahmane. All rights reserved.
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/689ee8a160.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>

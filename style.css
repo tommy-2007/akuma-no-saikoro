@@ -1,0 +1,354 @@
+/* English font */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* Japanese font */
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDMincho:wght@400;700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* arabic font */
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDMincho:wght@400;700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lemonada:wght@300..700&display=swap');
+
+/* scroll bar settings */
+/* scrollbar settings */
+/* For WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width:7px; /* Width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #eee; /* Background of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff0000; /* Scrollbar handle */
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #860000; /* Handle on hover */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Neue", cursive;
+}
+
+/* Basic styles for loading screen */
+.load {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #000, #de0000, #000);
+  transition: opacity 0.5s ease-out;
+  opacity: 1; /* Start fully visible */
+  position: fixed;
+  z-index: 10;
+}
+
+.load img {
+  width: 20%;
+}
+
+/* sections */
+
+.topPage{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.bar{
+  width: 250px;
+  height: 100vh;
+  background-image: url('./img/bg/3c698140-b74a-4d35-ba20-5a6066c41a29.jpeg');
+  position: relative;
+  overflow: hidden;
+  border-right: #000 3px solid;
+}
+
+.bar-content{
+  background: #000000a8;
+  height: 100%;
+  color: #fff;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.brand{
+  background: linear-gradient(180deg, #000, #8e0000, #000);
+  height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand img{
+  width: 70%;
+  cursor: pointer;
+}
+
+.pages{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border-top: 3px solid #fff;
+  padding-top: 20px;
+}
+
+.pages h1{
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  border-bottom: #fff solid 1px;
+}
+
+.page{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.page:hover{
+  background: #ffffffa2;
+  color: #000;
+}
+
+.actif{
+  background: #ffffff77;
+  color: #000;
+}
+
+.cover{
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  background: #850000;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cover img{
+  width: 100%;
+  opacity: .9;
+  position: absolute;
+
+}
+
+.cover iframe{
+  z-index: 3;
+  margin-top: 20vh;
+}
+
+.tm{
+  background-image: url('./img/bg/bg.png');
+  background-size: contain;
+}
+
+.team{
+  width: 100%;
+  height: 200px;
+  background: #320000ba;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.contact{
+  margin-bottom: 20px;
+}
+
+.contact i{
+  margin: 0 10px;
+}
+
+.contact i:hover{
+  cursor: pointer;
+  transition: 0.2s;
+  color: #de0000;
+}
+
+.area{
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  background: url('./img/bg/fad31d63-a301-4bf1-b9f2-c596b5559417.jpeg');
+  background-size: cover;
+}
+
+.news{
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  background: #49000074;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.area-title{
+  padding: 15px 30px;
+  background: #000;
+  /* border-radius: 50px; */
+  border:#fff solid 2px;
+  margin-bottom: 75px;
+}
+
+.new{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #000;
+  border: 3px #fff solid;
+  margin-bottom: 60px;
+}
+
+.des{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: start;
+  padding-left: 20px;
+  width: 70%;
+}
+
+.des h1{
+  color: #de0000;
+  border-bottom: 1px #de0000 solid;
+  padding-bottom: 10px;
+}
+
+.des p{
+  font-size: large;
+}
+
+.des h4{
+  color: #999;
+}
+
+.pic{
+  width: 20%;
+}
+
+.pic img{
+  width: 100%;
+}
+
+.story-f{
+  margin-bottom: 25px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  text-align: center;
+  line-height: 40px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+legend {
+  font-weight: bold;
+  text-align: center;
+  width: auto;
+  margin: 0 auto;
+  display: table; /* This helps center the legend */
+  font-size: 30px;
+  background: #fff;
+  color: #000;
+  padding: 5px 20px;
+  border-radius: 50px;
+}
+
+/* For devices with a width of 768px or less (like tablets) */
+@media screen and (max-width: 768px) {
+  .bar {
+    width: 200px; /* Adjust the width of the sidebar */
+  }
+  .cover iframe {
+    width: 90%; /* Make the video responsive */
+    height: auto; /* Adjust height automatically */
+  }
+  .pages h1 {
+    font-size: 20px; /* Adjust font size */
+  }
+  .page {
+    height: 40px; /* Adjust the height of the menu items */
+  }
+}
+
+/* For devices with a width of 480px or less (like smartphones) */
+@media screen and (max-width: 480px) {
+  .bar {
+    width: 150px; /* Further adjust the sidebar width */
+  }
+  .brand img {
+    width: 50%; /* Reduce the size of the logo */
+  }
+  .cover iframe {
+    width: 100%;
+    height: auto;
+  }
+  .pages h1 {
+    font-size: 18px; /* Further adjust font size */
+  }
+  .page {
+    height: 35px; /* Further adjust menu item height */
+  }
+  .team {
+    height: auto; /* Allow footer to expand based on content */
+    padding: 20px;
+  }
+  .new {
+    flex-direction: column; /* Stack the news section vertically */
+  }
+  .des {
+    width: 100%; /* Make description take full width */
+    padding-left: 0;
+  }
+  .pic {
+    width: 100%; /* Make the picture take full width */
+    margin-bottom: 20px;
+  }
+}
+
+/* For very small devices (320px or less) */
+@media screen and (max-width: 320px) {
+  .bar {
+    width: 100px; /* Further reduce sidebar width */
+  }
+  .brand img {
+    width: 40%; /* Further reduce logo size */
+  }
+  .pages h1 {
+    font-size: 16px;
+  }
+  .page {
+    height: 30px;
+  }
+}
+
+
